@@ -1026,17 +1026,16 @@ html {
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
-    flex-direction: column;
-    background-color: #111;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    padding: 1rem;
-    z-index: 1000;
   }
 
   .nav-menu.open {
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #111;
+    padding: 1rem;
+    z-index: 999;
   }
 }

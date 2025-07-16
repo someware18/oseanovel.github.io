@@ -906,3 +906,19 @@ html {
     width: 140px;
   }
 }
+.recommended .novel-scroll-wrapper {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.recommended .novel-row-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  width: max-content;
+}
+
+.recommended .novel-card {
+  flex: 0 0 auto;
+  width: 180px;
+}

@@ -108,7 +108,7 @@ document.querySelector(".search-input").addEventListener("input", (e) => {
 
 // Mobile menu toggle (if needed)
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector(".mobile-menu-btn").addEventListener("click", () => {
+  document.querySelector(".mobile-menu-btn").addEventListener"click", () => 
   const navMenu = document.querySelector(".nav-menu")
   navMenu.classList.toggle("open")
   })

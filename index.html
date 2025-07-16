@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OseaNovel - Platform Novel Online Terbaik</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="/placeholder.svg?height=32&width=32" alt="OseaNovel" class="brand-logo">
+                <span class="brand-text">OseaNovel</span>
+            </div>
+            
+            <div class="nav-search">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Cari novel, author, genre..." class="search-input">
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#" class="nav-link">Beranda</a>
+                <a href="#" class="nav-link">Novel</a>
+                <a href="#" class="nav-link">Ranking</a>
+                <a href="#" class="nav-link">Genre</a>
+                <div class="nav-user">
+                    <button class="login-btn">Masuk</button>
+                    <button class="register-btn">Daftar</button>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="highlight-carousel">
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-slide active">
+                    <img src="/placeholder.svg?height=400&width=800" alt="Lady Ruler" />
+                    <div class="slide-overlay"></div>
+                    <div class="highlight-text">
+                        <span class="genre-tag">Fantasy</span>
+                        <h2>Lady Ruler</h2>
+                        <p>Kisah genius perempuan dalam dunia sihir yang dikuasai patriarki. Mengikuti perjalanan Aria yang bangkit dari keterpurukan untuk menjadi penguasa tertinggi.</p>
+                        <div class="highlight-actions">
+                            <a href="#" class="highlight-btn primary">Baca Sekarang</a>
+                            <a href="#" class="highlight-btn secondary">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <img src="/placeholder.svg?height=400&width=800" alt="Chrono Hunter" />
+                    <div class="slide-overlay"></div>
+                    <div class="highlight-text">
+                        <span class="genre-tag">Sci-Fi</span>
+                        <h2>Chrono Hunter</h2>
+                        <p>Petualangan pemburu waktu melawan kehancuran dimensi. Aksi mendebarkan lintas ruang dan waktu untuk menyelamatkan realitas.</p>
+                        <div class="highlight-actions">
+                            <a href="#" class="highlight-btn primary">Baca Sekarang</a>
+                            <a href="#" class="highlight-btn secondary">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <img src="/placeholder.svg?height=400&width=800" alt="Shadow Realm" />
+                    <div class="slide-overlay"></div>
+                    <div class="highlight-text">
+                        <span class="genre-tag">Dark Fantasy</span>
+                        <h2>Shadow Realm</h2>
+                        <p>Dunia gelap penuh misteri dan kekuatan supernatural. Mengungkap rahasia kuno yang tersembunyi dalam bayangan.</p>
+                        <div class="highlight-actions">
+                            <a href="#" class="highlight-btn primary">Baca Sekarang</a>
+                            <a href="#" class="highlight-btn secondary">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="carousel-indicators">
+                <button class="indicator active" onclick="currentSlide(1)"></button>
+                <button class="indicator" onclick="currentSlide(2)"></button>
+                <button class="indicator" onclick="currentSlide(3)"></button>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <!-- Announcements Section -->
+        <section class="announcements">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-bullhorn"></i>
+                        Pengumuman
+                    </h2>
+                    <a href="#" class="section-link">Lihat Semua</a>
+                </div>
+                
+                <div class="announcement-grid">
+                    <article class="announcement-card">
+                        <div class="announcement-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <h3>Event Spesial Tahun Baru</h3>
+                            <p>Dapatkan bonus poin dan akses premium gratis selama 7 hari!</p>
+                            <span class="announcement-date">2 hari yang lalu</span>
+                        </div>
+                    </article>
+                    
+                    <article class="announcement-card">
+                        <div class="announcement-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <h3>Novel Baru Rilis</h3>
+                            <p>10 novel terbaru telah ditambahkan ke koleksi kami minggu ini.</p>
+                            <span class="announcement-date">5 hari yang lalu</span>
+                        </div>
+                    </article>
+                    
+                    <article class="announcement-card">
+                        <div class="announcement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <h3>Kompetisi Menulis</h3>
+                            <p>Ikuti kompetisi menulis berhadiah jutaan rupiah!</p>
+                            <span class="announcement-date">1 minggu yang lalu</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended Section -->
+        <section class="recommended">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-heart"></i>
+                        Rekomendasi
+                    </h2>
+                    <a href="#" class="section-link">Lihat Semua</a>
+                </div>
+                
+                <div class="novel-grid recommended-grid">
+                    <article class="novel-card">
+                        <div class="novel-cover">
+                            <img src="/placeholder.svg?height=200&width=150" alt="Eternal Flame">
+                            <div class="novel-overlay">
+                                <button class="quick-read-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="novel-info">
+                            <span class="genre-tag">Romance</span>
+                            <h3 class="novel-card-title">Eternal Flame</h3>
+                            <p class="novel-card-desc">Cinta yang melampaui batas waktu dan ruang dalam dunia fantasi yang memukau.</p>
+                            <div class="novel-stats">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    4.8
+                                </span>
+                                <span class="chapters">156 Chapter</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="novel-card">
+                        <div class="novel-cover">
+                            <img src="/placeholder.svg?height=200&width=150" alt="Dragon's Legacy">
+                            <div class="novel-overlay">
+                                <button class="quick-read-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="novel-info">
+                            <span class="genre-tag">Adventure</span>
+                            <h3 class="novel-card-title">Dragon's Legacy</h3>
+                            <p class="novel-card-desc">Warisan naga kuno yang mengubah takdir seorang pemuda biasa menjadi legenda.</p>
+                            <div class="novel-stats">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    4.9
+                                </span>
+                                <span class="chapters">203 Chapter</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="novel-card">
+                        <div class="novel-cover">
+                            <img src="/placeholder.svg?height=200&width=150" alt="Mystic Academy">
+                            <div class="novel-overlay">
+                                <button class="quick-read-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="novel-info">
+                            <span class="genre-tag">School</span>
+                            <h3 class="novel-card-title">Mystic Academy</h3>
+                            <p class="novel-card-desc">Kehidupan sekolah sihir yang penuh dengan misteri dan petualangan menantang.</p>
+                            <div class="novel-stats">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    4.7
+                                </span>
+                                <span class="chapters">89 Chapter</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="novel-card">
+                        <div class="novel-cover">
+                            <img src="/placeholder.svg?height=200&width=150" alt="Void Walker">
+                            <div class="novel-overlay">
+                                <button class="quick-read-btn">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="novel-info">
+                            <span class="genre-tag">Action</span>
+                            <h3 class="novel-card-title">Void Walker</h3>
+                            <p class="novel-card-desc">Pejuang dimensi yang melintasi kekosongan untuk melindungi semesta.</p>
+                            <div class="novel-stats">
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    4.6
+                                </span>
+                                <span class="chapters">178 Chapter</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Updates Section -->
+        <section class="updates">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-clock"></i>
+                        Update Terbaru
+                    </h2>
+                    <div class="filter-tabs">
+                        <button class="filter-tab active">Semua</button>
+                        <button class="filter-tab">Hari Ini</button>
+                        <button class="filter-tab">Minggu Ini</button>
+                    </div>
+                </div>
+                
+                <div class="novel-grid updates-grid">
+                    <article class="novel-card">
+                        <div class="novel-cover">
+                            <img src="/placeholder.svg?height=200&width=150" alt="Chrono Hunter">
+                            <div class="update-badge">Baru</div>
+                        </div>
+                        <div class="novel-info">
+                            <span class="genre-tag">Sci-Fi</span>
+                            <h3 class="novel-card-title">Chrono Hunter</h3>
+                            <p class="novel-card-desc">Petualangan pemburu waktu melawan kehancuran dimensi.</p>
+                            <div class="novel-stats">
+                                <span class="update-time">2 jam lalu</span>
+                                <span class="chapters">Chapter 45</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="novel-card">
+                        <div class="novel-cover">
+                            <img src="/placeholder.svg?height=200&width=150" alt="Lady Ruler">
+                            <div class="update-badge">Update</div>
+                        </div>
+                        <div class="novel-info">
+                            <span class="genre-tag">Fantasy</span>
+                            <h3 class="novel-card-title">Lady Ruler</h3>
+                            <p class="novel-card-desc">Kisah genius perempuan dalam dunia sihir yang dikuasai patriarki.</p>
+                            <div class="novel-stats">
+                                <span class="update-time">5 jam lalu</span>
+                                <span class="chapters">Chapter 78</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="novel-card">
+                        <div class="novel-cover">
+                            <img src="/placeholder.svg?height=200&width=150" alt="Shadow Realm">
+                        </div>
+                        <div class="novel-info">
+                            <span class="genre-tag">Dark Fantasy</span>
+                            <h3 class="novel-card-title">Shadow Realm</h3>
+                            <p class="novel-card-desc">Dunia gelap penuh misteri dan kekuatan supernatural.</p>
+                            <div class="novel-stats">
+                                <span class="update-time">1 hari lalu</span>
+                                <span class="chapters">Chapter 23</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="novel-card">
+                        <div class="novel-cover">
+                            <img src="/placeholder.svg?height=200&width=150" alt="Immortal Path">
+                        </div>
+                        <div class="novel-info">
+                            <span class="genre-tag">Cultivation</span>
+                            <h3 class="novel-card-title">Immortal Path</h3>
+                            <p class="novel-card-desc">Perjalanan kultivasi menuju keabadian yang penuh rintangan.</p>
+                            <div class="novel-stats">
+                                <span class="update-time">2 hari lalu</span>
+                                <span class="chapters">Chapter 156</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="novel-card">
+                        <div class="novel-cover">
+                            <img src="/placeholder.svg?height=200&width=150" alt="Royal Academy">
+                        </div>
+                        <div class="novel-info">
+                            <span class="genre-tag">Romance</span>
+                            <h3 class="novel-card-title">Royal Academy</h3>
+                            <p class="novel-card-desc">Kehidupan akademi kerajaan dengan intrik politik dan romansa.</p>
+                            <div class="novel-stats">
+                                <span class="update-time">3 hari lalu</span>
+                                <span class="chapters">Chapter 67</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="novel-card">
+                        <div class="novel-cover">
+                            <img src="/placeholder.svg?height=200&width=150" alt="Beast Tamer">
+                        </div>
+                        <div class="novel-info">
+                            <span class="genre-tag">Adventure</span>
+                            <h3 class="novel-card-title">Beast Tamer</h3>
+                            <p class="novel-card-desc">Penjinak monster yang membangun kerajaan dari nol.</p>
+                            <div class="novel-stats">
+                                <span class="update-time">4 hari lalu</span>
+                                <span class="chapters">Chapter 134</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="load-more">
+                    <button class="load-more-btn">Muat Lebih Banyak</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="/placeholder.svg?height=32&width=32" alt="OseaNovel" class="brand-logo">
+                        <span class="brand-text">OseaNovel</span>
+                    </div>
+                    <p>Platform novel online terbaik dengan koleksi ribuan cerita menarik dari berbagai genre.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#">Novel</a></li>
+                        <li><a href="#">Ranking</a></li>
+                        <li><a href="#">Genre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Kontak</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 OseaNovel. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="#" class="bottom-nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Beranda</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-book"></i>
+            <span>Novel</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-search"></i>
+            <span>Cari</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-bookmark"></i>
+            <span>Favorit</span>
+        </a>
+        <a href="#" class="bottom-nav-item">
+            <i class="fas fa-user"></i>
+            <span>Profil</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

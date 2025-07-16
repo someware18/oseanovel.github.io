@@ -1017,3 +1017,26 @@ html {
   gap: 0.5rem;
   flex-grow: 1;
 }
+/* Tambahkan di styles.css */
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+}

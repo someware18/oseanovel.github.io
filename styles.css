@@ -884,3 +884,25 @@ html {
     font-size: 1.2rem;
     font-weight: bold;
 }
+.novel-scroll-wrapper {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.novel-row-scroll {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+}
+
+.novel-card {
+  flex: 0 0 auto;
+  width: 180px; /* atau 160px sesuai desain kamu */
+}
+
+@media (max-width: 768px) {
+  .novel-card {
+    width: 140px;
+  }
+}

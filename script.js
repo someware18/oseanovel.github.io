@@ -108,10 +108,16 @@ document.querySelector(".search-input").addEventListener("input", (e) => {
 
 // Mobile menu toggle (if needed)
 document.querySelector(".mobile-menu-btn").addEventListener("click", () => {
-  // Toggle mobile menu
-  console.log("Mobile menu toggled")
+  const navMenu = document.querySelector(".nav-menu")
+  navMenu.classList.toggle("open")
 })
-
+document.addEventListener("click", (e) => {
+  const menu = document.querySelector(".nav-menu")
+  const button = document.querySelector(".mobile-menu-btn")
+  if (!menu.contains(e.target) && !button.contains(e.target)) {
+    menu.classList.remove("open")
+  }
+})
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {

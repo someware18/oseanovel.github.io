@@ -227,13 +227,14 @@ body {
 
 .genre-tag {
   display: inline-block;
+  width: fit-content;
   background: #f04a4a;
   color: #ffffff;
-  padding: 0.3rem 1rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 15px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  white-space: nowrap;
 }
 
 .highlight-text h2 {

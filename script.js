@@ -91,21 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
-  // === Mobile menu toggle ===
-  const menuButton = document.querySelector(".mobile-menu-btn")
-  const navMenu = document.querySelector(".nav-menu")
-
-  if (menuButton && navMenu) {
-    menuButton.addEventListener("click", () => {
-      navMenu.classList.toggle("open")
-    })
-
-    document.addEventListener("click", (e) => {
-      if (!navMenu.contains(e.target) && !menuButton.contains(e.target)) {
-        navMenu.classList.remove("open")
-      }
-    })
-  }
 
   // === Smooth scroll for anchor links ===
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

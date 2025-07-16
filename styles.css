@@ -973,3 +973,47 @@ html {
   font-size: 0.7rem;
   color: rgba(255,255,255,0.6);
 }
+.updates .novel-scroll-wrapper {
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.updates .novel-row-scroll {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+}
+
+.updates .novel-card {
+  flex: 0 0 auto;
+  width: 157px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.1));
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.updates .novel-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(240, 74, 74, 0.3);
+  border-color: rgba(240, 74, 74, 0.3);
+}
+
+.updates .novel-card img {
+  width: 157px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.updates .novel-info {
+  padding: 0.8rem;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}

@@ -455,14 +455,17 @@ body {
 
 .novel-cover {
   position: relative;
-  height: 200px;
+  aspect-ratio: 2 / 3; /* Atau 3 / 4 juga bisa */
+  width: 100%;
   overflow: hidden;
+  background: #000;
 }
 
 .novel-cover img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.3s ease;
 }
 

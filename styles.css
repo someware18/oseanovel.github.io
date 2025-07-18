@@ -1065,7 +1065,7 @@ html {
   transition: transform 0.5s ease-in-out;
 }
 .highlight-section {
-  margin-top: 60px; /* Jarak dari header */
+  margin-top: 100px; /* Jarak dari header */
   padding: 1rem 0;
   position: relative;
   overflow: hidden;

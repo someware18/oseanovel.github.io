@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function resetAutoSlide() {
     clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(() => changeSlide(1), 5000);
+    autoSlideInterval = setInterval(() => changeSlide(1), 8000);
   }
 
   if (prevBtn && nextBtn) {
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCarousel();
   };
 
-  autoSlideInterval = setInterval(() => changeSlide(1), 5000);
+  autoSlideInterval = setInterval(() => changeSlide(1), 8000);
 
   // Swipe support
   let startX = 0, endX = 0;

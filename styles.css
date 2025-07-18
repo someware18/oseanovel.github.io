@@ -1050,3 +1050,17 @@ html {
 .carousel-btn.next {
   right: 40%;
 }
+.highlight-carousel {
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .carousel-controls {
+    display: none;
+  }
+}
+.carousel-track {
+  transition: transform 0.5s ease-in-out;
+}

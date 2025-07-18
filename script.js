@@ -182,34 +182,3 @@ function resetAutoSlide() {
     updateCarousel();
   }, 5000);
 }
-let currentSlideIndex = 0;
-
-function showSlide(index) {
-    const slides = document.querySelectorAll(".carousel-slide");
-    const indicators = document.querySelectorAll(".indicator");
-
-    if (index >= slides.length) currentSlideIndex = 0;
-    else if (index < 0) currentSlideIndex = slides.length - 1;
-    else currentSlideIndex = index;
-
-    slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === currentSlideIndex);
-    });
-
-    indicators.forEach((dot, i) => {
-        dot.classList.toggle("active", i === currentSlideIndex);
-    });
-}
-
-function changeSlide(n) {
-    showSlide(currentSlideIndex + n);
-}
-
-function currentSlideSet(n) {
-    showSlide(n - 1);
-}
-
-// Jalankan saat pertama kali halaman dibuka
-document.addEventListener("DOMContentLoaded", () => {
-    showSlide(currentSlideIndex);
-});

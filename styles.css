@@ -1030,3 +1030,23 @@ html {
     z-index: 999;
   }
 }
+.carousel-btn {
+  position: absolute;
+  bottom: 10px;           /* ⬅️ tombol di bawah */
+  top: auto;              /* pastikan override posisi sebelumnya */
+  transform: none;        /* hapus centering vertikal */
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 40%;
+}
+
+.carousel-btn.next {
+  right: 40%;
+}

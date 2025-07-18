@@ -1050,3 +1050,8 @@ html {
 .carousel-btn.next {
   right: 40%;
 }
+@media (max-width: 768px) {
+  .carousel-btn {
+    display: none;
+  }
+}

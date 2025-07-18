@@ -156,3 +156,29 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el)
   })
 })
+// === Arrow Navigation ===
+const prevBtn = document.getElementById("prevSlide");
+const nextBtn = document.getElementById("nextSlide");
+
+if (prevBtn && nextBtn) {
+  prevBtn.addEventListener("click", () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateCarousel();
+    resetAutoSlide();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateCarousel();
+    resetAutoSlide();
+  });
+}
+
+// Reset auto-slide timer saat user menekan tombol panah
+function resetAutoSlide() {
+  clearInterval(autoSlideInterval);
+  autoSlideInterval = setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateCarousel();
+  }, 5000);
+}
